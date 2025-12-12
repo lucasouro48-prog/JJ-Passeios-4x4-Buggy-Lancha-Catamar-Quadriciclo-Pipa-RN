@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Passeios — JJ Passeios</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<header class="header">
+  <div class="brand">
+      <div class="logo">JJ</div>
+      <div><div class="brand-title">JJ Passeios</div></div>
+  </div>
+
+  <nav class="nav">
+    <a href="index.html">Início</a>
+    <a href="galeria.html">Galeria</a>
+    <a href="passeios-a.html">Passeios</a>
+    <a href="reserva.html">Reserva</a>
+  </nav>
+
+  <button id="langToggle" class="btn">EN</button>
+</header>
+
+<main class="container">
+  <h1>Passeios</h1>
+  <p class="small">Escolha seu passeio e adicione à reserva.</p>
+
+  <section style="margin-top:14px">
+    <div class="grid">
+
+      <!-- LANCHA -->
+      <div class="card">
+        <img src="https://abracepipa.com.br/wp-content/uploads/2021/08/abracepipa22.jpg" alt="">
+        <h3>Passeio de Lancha</h3>
+        <p class="small">1h30 com paradas para banho.</p>
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <strong>R$ 70,00</strong>
+          <button class="btn" onclick="selecionarPasseio('Lancha',70)">Reservar</button>
+        </div>
+      </div>
+
+      <!-- QUADRICICLO -->
+      <div class="card">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.V591pGxhgU_F5ldoebW3NwHaGg?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+        <h3>Quadriciclo</h3>
+        <p class="small">2 horas de trilhas e aventura.</p>
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <strong>R$ 240,00</strong>
+          <button class="btn" onclick="selecionarPasseio('Quadriciclo',240)">Reservar</button>
+        </div>
+      </div>
+
+      <!-- BUGGY -->
+      <div class="card">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.xoDbfmdmjCJ7C4lBwObO3wHaEK?cb=ucfimg2&ucfimg=1&w=750&h=422&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+        <h3>Buggy</h3>
+        <p class="small">Dunas, lagoas e mirantes.</p>
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <strong>Consultar</strong>
+          <button class="btn secondary" onclick="whatsapp()">Consultar</button>
+        </div>
+      </div>
+
+      <!-- CATAMARÃ -->
+      <div class="card">
+        <img src="https://www.cvc.com.br/dicas-de-viagem/wp-content/uploads/2018/12/tibau-do-sul-passeio-lagoa-guarairas-topo.jpg" alt="">
+        <h3>Catamarã</h3>
+        <p class="small">2h30 com música e banho.</p>
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <strong>R$ 65,00</strong>
+          <button class="btn" onclick="selecionarPasseio('Catamarã',65)">Reservar</button>
+        </div>
+      </div>
+
+      <!-- 4x4 -->
+      <div class="card">
+        <img src="https://cdn.paytour.com.br/assets/images/passeios-2500255/7516626fb4af72d56eb8825ec509aa74/jeep2.jfif" alt="">
+        <h3>Passeio 4x4</h3>
+        <p class="small">Aventura off-road completa.</p>
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <strong>Consultar</strong>
+          <button class="btn secondary" onclick="whatsapp()">Consultar</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">© JJ Passeios — Todos os direitos reservados.</footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

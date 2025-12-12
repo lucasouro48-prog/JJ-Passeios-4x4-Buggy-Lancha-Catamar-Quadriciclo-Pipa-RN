@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Reserva — JJ Passeios</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="brand">
+      <div class="logo">JJ</div>
+      <div><div class="brand-title">JJ Passeios</div></div>
+  </div>
+
+  <nav class="nav">
+    <a href="index.html">Início</a>
+    <a href="galeria.html">Galeria</a>
+    <a href="passeios-a.html">Passeios</a>
+    <a href="reserva.html">Reserva</a>
+  </nav>
+
+  <button id="langToggle" class="btn">EN</button>
+</header>
+
+<main class="container">
+
+  <h1>Reserva</h1>
+  <p class="small">Revise os passeios selecionados e finalize pelo WhatsApp.</p>
+
+  <section style="margin-top:18px;display:grid;grid-template-columns:1fr 360px;gap:22px">
+
+      <!-- LISTA DO CARRINHO -->
+      <div id="cart"></div>
+
+      <!-- FORMULÁRIO -->
+      <aside>
+        <div class="card">
+          <h3>Dados do Cliente</h3>
+
+          <label>Nome Completo</label>
+          <input class="input" id="nome" placeholder="Seu nome"/>
+
+          <label style="margin-top:10px">Telefone</label>
+          <input class="input" id="telefone" placeholder="(xx) 9xxxx-xxxx"/>
+
+          <label style="margin-top:10px">Horário do Passeio</label>
+          <input class="input" id="horario" type="time"/>
+
+          <label style="margin-top:10px">Observações</label>
+          <textarea class="input" id="obs" rows="3" placeholder="Informações adicionais"></textarea>
+
+          <div style="margin-top:15px">
+            <button class="btn" onclick="enviarWhatsApp()">Enviar para o WhatsApp</button>
+          </div>
+        </div>
+      </aside>
+
+  </section>
+
+  <footer class="footer">© JJ Passeios — Todos os direitos reservados.</footer>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
